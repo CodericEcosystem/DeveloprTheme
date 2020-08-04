@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<noscript class="message black-gradient simpler">Your browser does not support JavaScript! Some features won't work as expected...</noscript>
+		<hgroup id="main-title" class="thin">
+			<h1>{{ page.title | escape }}</h1>
+				{%- if page.subtitle -%}
+				<h2>{{ page.subtitle | escape }} 
+					{%- if page.number -%}
+					<strong>{{ page.number | escape }}</strong>
+					{%- endif -%}
+				</h2>
+				{%- endif -%}
+		</hgroup>
+
+
+		<div class="dashboard">
+
+          
+			<div class="columns">
+
+				<div class="nine-columns twelve-columns-mobile" id="demo-chart">
+					<!-- This div will hold the chart generated in the footer -->
+				</div>
+
+				<div class="three-columns twelve-columns-mobile new-row-mobile">
+					<ul class="stats split-on-mobile">
+						<li><a href="javascript:void(0)">
+							<strong>21</strong> new <br>accounts
+						</a></li>
+						<li><a href="javascript:void(0)">
+							<strong>15</strong> referred new <br>accounts
+						</a></li>
+						<li>
+							<strong>5</strong> new <br>items
+						</li>
+						<li>
+							<strong>235</strong> new <br>comments
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="with-padding">
+			  {{ content }}
+		</div>
